@@ -1,0 +1,38 @@
+public class Staff {
+    private int workExperience;
+    private int phone;
+    private String name;
+    private String skill;
+    
+    public void setWorkExperience(int workExperience){
+        this.workExperience = workExperience;
+    }
+    
+    public int getWorkExperience(){
+        return workExperience;
+    }
+    
+    public void setPhone(int phone){
+        this.phone = phone;
+    }
+    
+    public int getPhone(){
+        return phone;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setSkill(String skill){
+        this.skill = skill;
+    }
+    
+    public String getSkill(){
+        return skill;
+    }
+}

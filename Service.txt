@@ -1,0 +1,75 @@
+public class Service {
+    private Client cli;
+    private Staff staff;
+    private Administrator adm;
+    private double cost;
+    private String type;
+    private String name;
+    
+    public Service(){
+        this.cli = new Client();
+        this.staff = new Staff();
+        this.adm = new Administrator();
+    }
+    
+    public Client getCli(){
+        return cli;
+    }
+    
+    public Staff getStaff(){
+        return staff;
+    }
+    
+    public Administrator getAdm(){
+        return adm;
+    }
+    
+    public void setCost(double cost){
+        this.cost = cost;
+    }
+    
+    public double getCost(){
+        return cost;
+    }
+    
+    public void setType(String type){
+        this.type = type;
+    }
+    
+    public String getType(){
+        return type;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void printAboutObject(){
+        System.out.println("Клиент:");
+        System.out.println("ФИО - " + this.cli.getName());
+        System.out.println("Номер телефона - " + this.cli.getPhone());
+        System.out.println("Привилегия - " + this.cli.getPrivilege());
+        System.out.println("Услуга - " + this.cli.getService());
+        System.out.println("Пожелания - " + this.cli.getWishes());
+        System.out.println("Пол - " + this.cli.getGender());
+        System.out.println();
+        System.out.println("Персонал:");
+        System.out.println("ФИО - " + this.staff.getName());
+        System.out.println("Навык - " + this.staff.getSkill());
+        System.out.println("Стаж работы - " + this.staff.getWorkExperience());
+        System.out.println("Номер телефона - " + this.staff.getPhone());
+        System.out.println();
+        System.out.println("Администратор:");
+        System.out.println("ФИО - " + this.adm.getName());
+        System.out.println("Номер телефона - " + this.adm.getPhone());
+        System.out.println();
+        System.out.println("Услуга:");
+        System.out.println("Тип - " + this.getType());
+        System.out.println("Стоимость - " + this.getCost());
+        System.out.println("Название - " + this.getName());
+    }
+}

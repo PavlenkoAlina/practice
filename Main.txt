@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+        Service ser = new Service();
+        
+        ser.getCli().setName("Андреева Арина Алексеевна");
+        ser.getCli().setPhone(892031);
+        ser.getCli().setPrivilege("постоянный клиент");
+        ser.getCli().setService("аквачистка");
+        ser.getCli().setWishes("Все понравилось");
+        ser.getCli().setGender("ж");
+        
+        ser.getStaff().setName("Борисова Татьяна Олеговна");
+        ser.getStaff().setSkill("мастер химчистки");
+        ser.getStaff().setWorkExperience(2);
+        ser.getStaff().setPhone(936475);
+        
+        ser.getAdm().setName("Петров Олег Александрович");
+        ser.getAdm().setPhone(839456);
+        
+        ser.setType("аквачистка");
+        ser.setCost(900.0);
+        ser.setName("чистка обивки мебели, мелкий ремонт одежды");
+
+        ser.printAboutObject();
+    }
+}

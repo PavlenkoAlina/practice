@@ -1,0 +1,71 @@
+public class Client {
+    private Administrator adm;
+    private Staff staff;
+    private int phone;
+    private String name;
+    private String privilege;
+    private String service;
+    private String wishes;
+    private String gender;
+    
+    public Client(){
+        this.adm = new Administrator();
+        this.staff = new Staff();
+    }
+    
+    public Administrator getAdm(){
+        return adm;
+    }
+    
+    public Staff geStaff(){
+        return staff;
+    }
+    
+    public void setPhone(int phone){
+        this.phone = phone;
+    }
+  
+    public int getPhone(){
+        return phone;
+    }
+    
+    public void setPrivilege(String privilege){
+        this.privilege = privilege;
+    }
+    
+    public String getPrivilege(){
+        return privilege;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setService(String service){
+        this.service = service;
+    }
+    
+    public String getService(){
+        return service;
+    }
+    
+    public void setWishes(String wishes){
+        this.wishes = wishes;
+    }
+    
+    public String getWishes(){
+        return wishes;
+    }
+    
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+    
+    public String getGender(){
+        return gender;
+    }
+}

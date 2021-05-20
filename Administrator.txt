@@ -1,0 +1,29 @@
+public class Administrator {
+    private Staff staff;
+    private String name;
+    private int phone;
+    
+    public Administrator(){
+        this.staff = new Staff();
+    }
+        
+    public Staff geStaff(){
+        return staff;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setPhone(int phone){
+        this.phone = phone;
+    } 
+    
+    public int getPhone(){
+        return phone;
+    }
+}
